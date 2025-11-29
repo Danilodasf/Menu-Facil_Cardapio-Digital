@@ -1,60 +1,102 @@
 # MenuFácil - Cardápio Digital
 
+Aplicativo mobile de cardápio digital desenvolvido em Flutter, apresentando comidas e bebidas brasileiras em uma interface moderna e minimalista.
 
-Funcionalidades
+## 🎯 Funcionalidades
 
-- **Menu Interativo**: Navegue por todos os itens, comidas ou bebidas
-- **Carrinho de Compras**: Adicione itens com quantidade personalizável
-- **Checkout Completo**: Formulário com validação para finalizar o pedido
-- **Design Moderno**: Interface escura e colorida com animações suaves
+### Menu Interativo
+- Exibição de itens em **grid responsivo** (2 colunas)
+- **Filtros por categoria**: Todos, Comidas e Bebidas
+- Cards com imagem, nome, descrição e preço
 
-Arquitetura
+### Tela de Detalhes
+- Imagem em destaque do item
+- Descrição detalhada do prato
+- **Lista completa de ingredientes**
+- Seletor de quantidade
+- Botão para adicionar ao carrinho
 
-O projeto utiliza **Clean Architecture** com a seguinte estrutura:
+### Carrinho de Compras
+- **Lista de itens** adicionados
+- Controle de quantidade (+/-)
+- Cálculo automático do total
+- Badge com contador no ícone de navegação
+- Opção de limpar carrinho
+
+### Checkout
+- **Formulário completo** com validação:
+  - Informações pessoais (nome, telefone)
+  - Endereço de entrega
+  - Forma de pagamento (múltiplas opções)
+- Resumo do pedido
+- Confirmação com feedback visual
+
+### Navegação
+- **Bottom Navigation Bar** entre Menu e Carrinho
+- **Rotas nomeadas** para navegação estruturada
+- Transições suaves entre telas
+
+## 🏗️ Arquitetura
+
+Projeto desenvolvido seguindo **Clean Architecture**:
 
 ```
 lib/
-├── core/
-│   └── theme/           # Tema e estilização do app
-├── data/
-│   └── repositories/    # Repositórios de dados
-├── domain/
-│   └── models/          # Modelos de domínio
-└── presentation/
-    ├── pages/           # Páginas da aplicação
+├── core/theme/          # Tema e estilização
+├── data/repositories/   # Camada de dados
+├── domain/models/       # Modelos de negócio
+└── presentation/        # Camada de apresentação
+    ├── pages/           # Telas do aplicativo
     ├── providers/       # Gerenciamento de estado (Provider)
     └── widgets/         # Componentes reutilizáveis
 ```
 
-Tecnologias e Conceitos Implementados
+## 🛠️ Tecnologias
 
-1. **Componentes de Estado**: Provider para gerenciamento de estado global
-2. **Componentes de Navegação**: Bottom Navigation Bar para navegação entre páginas
-3. **Grids**: SliverGrid para exibição dos itens do menu
-4. **Listas**: ListView para exibição dos itens do carrinho
-5. **Formulários**: Formulário completo com validação no checkout
-6. **Bottom Navigation**: Navegação entre Menu e Carrinho
-7. **Rotas Nomeadas**: Sistema de rotas do Flutter
+- **Flutter** - Framework de desenvolvimento mobile
+- **Provider** - Gerenciamento de estado reativo
+- **Google Fonts** - Tipografia personalizada (Poppins)
+- **Material Design 3** - Componentes modernos
 
-Como Executar
+## 🎨 Design
 
-1. Certifique-se de ter o Flutter instalado:
+Interface com **tema escuro** e paleta de cores vibrantes:
+- **Rosa/Vermelho** (#FF6B6B) - Cor principal
+- **Turquesa** (#4ECDC4) - Cor secundária  
+- **Amarelo** (#FFE66D) - Cor de destaque
+- **Azul escuro** (#1A1A2E) - Background
+
+## 🍽️ Cardápio
+
+### Comidas (8 itens)
+Feijoada Completa • Picanha na Brasa • Moqueca de Peixe • Coxinha de Frango • Pão de Queijo • Açaí na Tigela • Brigadeiro Gourmet • Tapioca Recheada
+
+### Bebidas (6 itens)
+Caipirinha • Guaraná Antarctica • Água de Coco • Suco de Laranja • Café Expresso • Cerveja Artesanal
+
+## 🚀 Como Executar
+
 ```bash
-flutter --version
-```
-
-2. Instale as dependências:
-```bash
+# Instalar dependências
 flutter pub get
-```
 
-3. Execute o aplicativo:
-```bash
+# Executar no Chrome (Web)
+flutter run -d chrome
+
+# Executar no emulador/dispositivo
 flutter run
 ```
 
-Telas
+## 📋 Requisitos Implementados
 
-1. **Menu**: Exibe todos os itens com filtros por categoria
-2. **Carrinho**: Lista dos itens adicionados com controle de quantidade
-3. **Checkout**: Formulário para finalização do pedido
+✅ Componentes de Estado (Provider)  
+✅ Componentes de Navegação (Bottom Navigation Bar)  
+✅ Grids (SliverGrid com 2 colunas)  
+✅ Listas (ListView no carrinho)  
+✅ Formulários (Checkout com validação)  
+✅ Bottom Navigation com badge  
+✅ Rotas Nomeadas  
+
+## 📄 Licença
+
+Projeto desenvolvido para fins educacionais.
