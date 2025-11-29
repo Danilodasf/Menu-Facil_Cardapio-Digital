@@ -51,7 +51,7 @@ lib/
     └── widgets/         # Componentes reutilizáveis
 ```
 
-## 🛠️ Tecnologias
+##Tecnologias
 
 - **Flutter** - Framework de desenvolvimento mobile
 - **Provider** - Gerenciamento de estado reativo
