@@ -2,7 +2,7 @@
 
 Aplicativo mobile de cardápio digital desenvolvido em Flutter, apresentando comidas e bebidas brasileiras em uma interface moderna e minimalista.
 
-## 🎯 Funcionalidades
+## Funcionalidades
 
 ### Menu Interativo
 - Exibição de itens em **grid responsivo** (2 colunas)
@@ -36,7 +36,7 @@ Aplicativo mobile de cardápio digital desenvolvido em Flutter, apresentando com
 - **Rotas nomeadas** para navegação estruturada
 - Transições suaves entre telas
 
-## 🏗️ Arquitetura
+## Arquitetura
 
 Projeto desenvolvido seguindo **Clean Architecture**:
 
@@ -58,7 +58,7 @@ lib/
 - **Google Fonts** - Tipografia personalizada (Poppins)
 - **Material Design 3** - Componentes modernos
 
-## 🎨 Design
+## Design
 
 Interface com **tema escuro** e paleta de cores vibrantes:
 - **Rosa/Vermelho** (#FF6B6B) - Cor principal
@@ -66,7 +66,7 @@ Interface com **tema escuro** e paleta de cores vibrantes:
 - **Amarelo** (#FFE66D) - Cor de destaque
 - **Azul escuro** (#1A1A2E) - Background
 
-## 🍽️ Cardápio
+## Cardápio
 
 ### Comidas (8 itens)
 Feijoada Completa • Picanha na Brasa • Moqueca de Peixe • Coxinha de Frango • Pão de Queijo • Açaí na Tigela • Brigadeiro Gourmet • Tapioca Recheada
@@ -74,7 +74,7 @@ Feijoada Completa • Picanha na Brasa • Moqueca de Peixe • Coxinha de Frang
 ### Bebidas (6 itens)
 Caipirinha • Guaraná Antarctica • Água de Coco • Suco de Laranja • Café Expresso • Cerveja Artesanal
 
-## 🚀 Como Executar
+## Como Executar
 
 ```bash
 # Instalar dependências
@@ -87,7 +87,7 @@ flutter run -d chrome
 flutter run
 ```
 
-## 📋 Requisitos Implementados
+## Requisitos Implementados
 
 ✅ Componentes de Estado (Provider)  
 ✅ Componentes de Navegação (Bottom Navigation Bar)  
@@ -96,7 +96,3 @@ flutter run
 ✅ Formulários (Checkout com validação)  
 ✅ Bottom Navigation com badge  
 ✅ Rotas Nomeadas  
-
-## 📄 Licença
-
-Projeto desenvolvido para fins educacionais.
