@@ -29,7 +29,7 @@ class _AddToCartDialogState extends State<AddToCartDialog> {
           children: [
             ClipRRect(
               borderRadius: BorderRadius.circular(12),
-              child: Image.network(
+              child: Image.asset(
                 widget.item.imageUrl,
                 height: 150,
                 width: double.infinity,
@@ -156,4 +156,3 @@ class _AddToCartDialogState extends State<AddToCartDialog> {
     );
   }
 }
-
